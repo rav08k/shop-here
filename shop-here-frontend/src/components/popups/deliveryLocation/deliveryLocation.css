@@ -1,0 +1,85 @@
+.location-popup{
+    width: 400px;
+    height: 250px;
+    position: fixed;
+    top: calc((100vh - 250px)/2);
+    left: calc((100% - 400px)/2);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.top-title{
+    padding: 10px 20px;
+    width: 100%;
+    background: rgb(231, 231, 231);
+}
+
+.top-title h1{
+    font-size: 20px;
+}
+
+.top-title button{
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    background: transparent;
+    font-size: 16px;
+    border: none;
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+.top-title button:hover{
+   color: red;
+}
+.location-bottom{
+    padding:  20px;
+    font-size: 12px;
+    color: rgb(56, 56, 56);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.location-bottom .loc-btn{
+    padding: 10px 20px;
+    background: rgb(255, 204, 0);
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.loc-bot-middle{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+}
+.loc-bot-middle >span{
+    width: 50%;
+}
+.loc-bot-middle >hr{
+    width: 25%;
+}
+.location-popup input{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+}
+.location-popup .apply{
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.apply:hover{
+    background: rgb(255, 204, 0);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,7 @@
+
+.product_listing_page .container{
+    align-items: flex-start;
+    justify-content: space-between;
+    background: transparent;
+    padding: 10px 0;
+}

@@ -1,0 +1,209 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"slug": "mobiles",
+			"name": "Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Mobiles",
+			"url": "https://dummyjson.com/products/category/mobiles"
+		},
+		{
+			"id": 2,
+			"slug": "men-fashion",
+			"name": "Men Fashion",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Men+Fashion",
+			"url": "https://dummyjson.com/products/category/men-fashion",
+			"filters": [
+				{
+					"name": "Size",
+					"type": "checkbox",
+					"options": ["S", "M", "L", "XL"]
+				},
+				{
+					"name": "Color",
+					"type": "checkbox",
+					"options": ["Red", "Blue", "Green"]
+				},
+				{
+					"name": "Brand",
+					"type": "checkbox",
+					"options": ["Nike", "Adidas", "Puma"]
+				},
+				{ "name": "Price Range", "type": "range", "min": 0, "max": 200 }
+			]
+		},
+		{
+			"id": 3,
+			"slug": "women-fashion",
+			"name": "Women Fashion",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Women+Fashion",
+			"url": "https://dummyjson.com/products/category/women-fashion",
+			"filters": [
+				{
+					"name": "Size",
+					"type": "checkbox",
+					"options": ["S", "M", "L", "XL"]
+				},
+				{
+					"name": "Color",
+					"type": "checkbox",
+					"options": ["Red", "Blue", "Green"]
+				},
+				{
+					"name": "Brand",
+					"type": "checkbox",
+					"options": ["Nike", "Adidas", "Puma"]
+				},
+				{ "name": "Price Range", "type": "range", "min": 0, "max": 200 }
+			]
+		},
+		{
+			"id": 4,
+			"slug": "electronics",
+			"name": "Electronics",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Electronics",
+			"url": "https://dummyjson.com/products/category/electronics"
+		},
+		{
+			"id": 5,
+			"slug": "home-appliances",
+			"name": "Home Appliances",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Home+Appliances",
+			"url": "https://dummyjson.com/products/category/home-appliances"
+		},
+		{
+			"id": 6,
+			"slug": "laptops",
+			"name": "Laptops",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Laptops",
+			"url": "https://dummyjson.com/products/category/laptops",
+			"filters": [
+				{
+					"name": "Brand",
+					"type": "checkbox",
+					"options": ["HP", "Dell", "Lenovo", "Apple", "Asus"]
+				},
+				{
+					"name": "Processor",
+					"type": "checkbox",
+					"options": [
+						"Intel i5",
+						"Intel i7",
+						"Intel i9",
+						"AMD Ryzen 5",
+						"AMD Ryzen 7"
+					]
+				},
+				{
+					"name": "RAM",
+					"type": "checkbox",
+					"options": ["8GB", "16GB", "32GB", "64GB"]
+				},
+				{
+					"name": "Storage",
+					"type": "checkbox",
+					"options": ["256GB SSD", "512GB SSD", "1TB SSD", "1TB HDD", "2TB HDD"]
+				},
+				{ "name": "Price Range", "type": "range", "min": 0, "max": 300000 }
+			]
+		},
+		{
+			"id": 7,
+			"slug": "cameras",
+			"name": "Cameras",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Cameras",
+			"url": "https://dummyjson.com/products/category/cameras"
+		},
+		{
+			"id": 8,
+			"slug": "watches",
+			"name": "Watches",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Watches",
+			"url": "https://dummyjson.com/products/category/watches"
+		},
+		{
+			"id": 9,
+			"slug": "footwear",
+			"name": "Footwear",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Footwear",
+			"url": "https://dummyjson.com/products/category/footwear"
+		},
+		{
+			"id": 10,
+			"slug": "accessories",
+			"name": "Accessories",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Accessories",
+			"url": "https://dummyjson.com/products/category/accessories"
+		},
+		{
+			"id": 11,
+			"slug": "groceries",
+			"name": "Groceries",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Groceries",
+			"url": "https://dummyjson.com/products/category/groceries"
+		},
+		{
+			"id": 12,
+			"slug": "furniture",
+			"name": "Furniture",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Furniture",
+			"url": "https://dummyjson.com/products/category/furniture"
+		},
+		{
+			"id": 13,
+			"slug": "toys",
+			"name": "Toys",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Toys",
+			"url": "https://dummyjson.com/products/category/toys"
+		},
+		{
+			"id": 14,
+			"slug": "books",
+			"name": "Books",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Books",
+			"url": "https://dummyjson.com/products/category/books"
+		},
+		{
+			"id": 15,
+			"slug": "sports",
+			"name": "Sports",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Sports",
+			"url": "https://dummyjson.com/products/category/sports"
+		},
+		{
+			"id": 16,
+			"slug": "beauty",
+			"name": "Beauty",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Beauty",
+			"url": "https://dummyjson.com/products/category/beauty"
+		},
+		{
+			"id": 17,
+			"slug": "health",
+			"name": "Health",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Health",
+			"url": "https://dummyjson.com/products/category/health"
+		},
+		{
+			"id": 18,
+			"slug": "automotive",
+			"name": "Automotive",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Automotive",
+			"url": "https://dummyjson.com/products/category/automotive"
+		},
+		{
+			"id": 19,
+			"slug": "jewelry",
+			"name": "Jewelry",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Jewelry",
+			"url": "https://dummyjson.com/products/category/jewelry"
+		},
+		{
+			"id": 20,
+			"slug": "pet-supplies",
+			"name": "Pet Supplies",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Pet+Supplies",
+			"url": "https://dummyjson.com/products/category/pet-supplies"
+		}
+	]
+}

@@ -1,0 +1,135 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f6;
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.form-header {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.or-text {
+  font-weight: normal;
+  color: #777;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff3e6c;
+}
+
+.otp-input {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.otp-message {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.resend-text {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+.country-code {
+  color: #777;
+  font-weight: normal;
+}
+
+.required {
+  color: #ff3e6c;
+}
+
+.terms-text {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.terms-link {
+  color: #ff3e6c;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+.continue-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff3e6c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.continue-button:hover {
+  background-color: #e93762;
+}
+
+.help-text {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  margin-bottom: 8px;
+}
+
+.help-link {
+  color: #ff3e6c;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.help-link:hover {
+  text-decoration: underline;
+}

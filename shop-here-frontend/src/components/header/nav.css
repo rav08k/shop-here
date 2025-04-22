@@ -1,0 +1,181 @@
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav .container {
+	padding: 0;
+	justify-content: space-between;
+}
+
+.nav_logo img{
+	height: 50px;
+}
+
+.nav_location_wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0px;
+	cursor: pointer;
+}
+.location_icon {
+	width: 25px;
+	height: 25px;
+}
+
+.location_text {
+	text-align: start;
+}
+
+.deliver_to {
+	font-size: 12px;
+	margin-left: 2px;
+	margin-bottom: 3px;
+}
+
+.delivery_location {
+	font-size: 12px;
+	font-weight: 600;
+	color: rgb(0, 187, 255);
+}
+
+/* .location_pin{
+    width: 150px;
+    height: 40px;
+} */
+.nav_search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px #d4d4d4;
+	border-radius: 8px;
+	width: 55%;
+	height: 45px;
+	position: relative;
+	padding-left: 45px;
+	font-size: 16px;
+	background-image: url("../../../assets/loupe.png");
+	background-position: left 10px center;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-color: rgba(173, 216, 230, 0.2);
+	border: none;
+	outline: none;
+}
+
+.nav_icons_wrap {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 10px;
+	width: 200px;
+	height: 65px;
+}
+.nav_icons_wrap>a, .nav_icons_wrap>div {
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+}
+
+.nav_icons_wrap p {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+/* login-popup */
+.login-popup {
+	position: fixed;
+	top: 65px;
+	margin-left: 50px;
+	min-width: 180px;
+	z-index: 1000;
+	background: white;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: default;
+}
+.login-popup .login-profile-link{
+	display: block;
+	height: auto;
+	width: 100%;
+}
+  
+  .login-title {
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+	margin: 0 0 5px 0;
+  }
+  
+  .login-stitle {
+	font-size: 12px;
+	color: #5d5d5d;
+	margin: 0 0 15px 0;
+	font-weight: 400 !important;
+  }
+  
+  .login-btn-link{
+	position: relative;
+	text-decoration: none;
+	color: #ff3e6c;
+	width: 100%;
+  }
+  .login-btn {
+	background-color: white;
+	color: #ff3e6c;
+	border: 1px solid #eaeaec;
+	border-radius: 4px;
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+  }
+  
+  .login-btn:hover {
+	background-color: #f5f5f6;
+  }
+  
+  .login-popup hr {
+	border: none;
+	border-top: 1px solid #eaeaec;
+	margin: 10px 0;
+  }
+  
+  .login-popup ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .login-popup li {
+	font-size: 14px;
+	color: #333;
+	padding: 8px 0;
+	cursor: pointer;
+	position: relative;
+  }
+  
+  .login-popup li:hover {
+	color: #ff3e6c;
+  }
+  .login-popup li:last-child {
+	padding: 0;
+}

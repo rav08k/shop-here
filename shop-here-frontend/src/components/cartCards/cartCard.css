@@ -1,0 +1,162 @@
+/* Container for the entire cart card */
+.cart-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 15px 30px;
+    width: 100%; /* Adjust width as needed */
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Cart card description container */
+.cart-card-description {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+/* Image styling */
+.cart-card-img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Middle description section */
+.cart-card-desc-middle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Title styling */
+.cart-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Size and brand styling */
+.cart-card-size, .cart-card-brand {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Price section */
+.cart-card-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+/* Cost price (strikethrough) */
+.cost-price {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+/* Selling price */
+.selling-price {
+    font-size: 16px;
+    color: #b12704;
+    font-weight: bold;
+}
+
+/* Discount percentage */
+.discount {
+    font-size: 12px;
+    color: #008000;
+    background-color: #e6ffe6;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* End section (delivery info) */
+.cart-card-desc-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+/* Delivery date */
+.delivery-date {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+/* Delivery charge */
+.delivery-charge {
+    font-size: 12px;
+    color: #008000;
+    margin: 0;
+}
+
+/* Cart actions container */
+.cart-card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* Product quantity section */
+.product-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.decrease-value, .increase-value {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.product-quantity input[type="text"] {
+    width: 40px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Action buttons */
+.product-quantity>button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+.cart-card-actions>button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.cart-card-actions button:hover {
+    background-color: #f0f0f0;
+}

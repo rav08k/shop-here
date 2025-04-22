@@ -1,0 +1,181 @@
+{
+	"subcategries": [
+		{
+			"id": 11,
+			"slug": "android-mobiles",
+			"name": "Android Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Android",
+			"url": "https://dummyjson.com/products/category/mobiles/android",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 12,
+			"slug": "ios-mobiles",
+			"name": "iOS Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=iOS",
+			"url": "https://dummyjson.com/products/category/mobiles/ios",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 13,
+			"slug": "gaming-mobiles",
+			"name": "Gaming Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Gaming",
+			"url": "https://dummyjson.com/products/category/mobiles/gaming",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 14,
+			"slug": "budget-mobiles",
+			"name": "Budget Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Budget",
+			"url": "https://dummyjson.com/products/category/mobiles/budget",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 15,
+			"slug": "flagship-mobiles",
+			"name": "Flagship Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Flagship",
+			"url": "https://dummyjson.com/products/category/mobiles/flagship",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 16,
+			"slug": "5g-mobiles",
+			"name": "5G Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=5G",
+			"url": "https://dummyjson.com/products/category/mobiles/5g",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 17,
+			"slug": "dual-sim-mobiles",
+			"name": "Dual SIM Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Dual+SIM",
+			"url": "https://dummyjson.com/products/category/mobiles/dual-sim",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 18,
+			"slug": "waterproof-mobiles",
+			"name": "Waterproof Mobiles",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Waterproof",
+			"url": "https://dummyjson.com/products/category/mobiles/waterproof",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 19,
+			"slug": "mobiles-with-long-battery-life",
+			"name": "Mobiles with Long Battery Life",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Long+Battery",
+			"url": "https://dummyjson.com/products/category/mobiles/long-battery-life",
+			"parentCategoryId": 1
+		},
+		{
+			"id": 20,
+			"slug": "mobiles-with-high-camera-resolution",
+			"name": "Mobiles with High Camera Resolution",
+			"thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=High+Camera",
+			"url": "https://dummyjson.com/products/category/mobiles/high-camera-resolution",
+			"parentCategoryId": 1
+		},
+            {
+              "id": 101,
+              "slug": "men-casual-shirts",
+              "name": "Men Casual Shirts",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Shirts",
+              "url": "https://dummyjson.com/products/category/men-fashion/casual-shirts",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 102,
+              "slug": "men-formal-shirts",
+              "name": "Men Formal Shirts",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Formal+Shirts",
+              "url": "https://dummyjson.com/products/category/men-fashion/formal-shirts",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 103,
+              "slug": "men-jeans",
+              "name": "Men Jeans",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Jeans",
+              "url": "https://dummyjson.com/products/category/men-fashion/jeans",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 104,
+              "slug": "men-t-shirts",
+              "name": "Men T-Shirts",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=T-Shirts",
+              "url": "https://dummyjson.com/products/category/men-fashion/t-shirts",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 105,
+              "slug": "men-sweaters",
+              "name": "Men Sweaters",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Sweaters",
+              "url": "https://dummyjson.com/products/category/men-fashion/sweaters",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 106,
+              "slug": "men-jackets",
+              "name": "Men Jackets",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Jackets",
+              "url": "https://dummyjson.com/products/category/men-fashion/jackets",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 107,
+              "slug": "men-shoes",
+              "name": "Men Shoes",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Shoes",
+              "url": "https://dummyjson.com/products/category/men-fashion/shoes",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 108,
+              "slug": "men-watches",
+              "name": "Men Watches",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Watches",
+              "url": "https://dummyjson.com/products/category/men-fashion/watches",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 109,
+              "slug": "men-accessories",
+              "name": "Men Accessories",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Accessories",
+              "url": "https://dummyjson.com/products/category/men-fashion/accessories",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 110,
+              "slug": "men-hats",
+              "name": "Men Hats",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Hats",
+              "url": "https://dummyjson.com/products/category/men-fashion/hats",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 111,
+              "slug": "men-scarves",
+              "name": "Men Scarves",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Scarves",
+              "url": "https://dummyjson.com/products/category/men-fashion/scarves",
+              "parentCategoryId": 102
+            },
+            {
+              "id": 112,
+              "slug": "men-belts",
+              "name": "Men Belts",
+              "thumbnail": "https://dummyimage.com/200x200/ced4da/6c757d&text=Belts",
+              "url": "https://dummyjson.com/products/category/men-fashion/belts",
+              "parentCategoryId": 102
+            }
+
+	]
+}
