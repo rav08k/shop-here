@@ -1,2 +1,4 @@
-/extra-files
-/dummydata
+/extra-files/
+/dummydata/
+/shop-here-backend/node_modules/
+/shop-here-frontend/node_modules/

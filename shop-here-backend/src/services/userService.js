@@ -77,13 +77,13 @@ const userService = {
 	 * @throws {Error} If validation fails or user already exists.
 	 */
 	registerUser: async (userData) => {
-		const { email, password, first_name, last_name, contact, address, role } =
+		const { email, password, fullName, contact, role } =
 			userData;
 
 		// Basic Input Validation
-		if (!email || !password || !first_name || !last_name) {
+		if (!email || !password || !fullName ||!contact) {
 			throw new Error(
-				"Missing required fields: email, password, first_name, last_name are required."
+				"Missing required fields: email, password, mobile number and full_name are required."
 			);
 		}
 		if (!/\S+@\S+\.\S+/.test(email)) {
@@ -125,10 +125,8 @@ const userService = {
 			const userDataForDb = {
 				email: email,
 				password: hashedPassword,
-				first_name: first_name,
-				last_name: last_name,
+				full_name: fullName,
 				contact: contact,
-				address: address,
 				role: roleToSet,
 				is_active: true,
 			};

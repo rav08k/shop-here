@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { API_BASE_URL, API_TIMEOUT } from "../../constants";
+import { API_BASE_URL_P, API_BASE_URL_U, API_TIMEOUT } from "../../constants";
+
+import { useUserStore } from '../../stores/userStore';
+
+function getAuthToken(){
+  return useUserStore.getState().token;
+}
 
 // Configure default request options
 const defaultOptions = {
@@ -12,6 +18,12 @@ const defaultOptions = {
 
 // Create reusable fetch client with error handling and timeout
 export const fetchWithConfig = async (endpoint, options = {}) => {
+  let API_BASE_URL = API_BASE_URL_P;
+  if (endpoint.includes("auth")) {
+    API_BASE_URL = API_BASE_URL_U;
+  }
+  console.log("test",API_BASE_URL,endpoint);
+  
   const url = `${API_BASE_URL}/${endpoint}`;
   const timeoutId = setTimeout(() => {
     throw new Error("Request timeout");
@@ -43,17 +55,9 @@ export const fetchWithConfig = async (endpoint, options = {}) => {
   }
 };
 
-// Authentication token handling
-let authToken = null;
-
-export const setAuthToken = (token) => {
-  authToken = token;
-};
-
-export const getAuthToken = () => authToken;
-
 // API requests with auth token
 export const authenticatedFetch = async (endpoint, options = {}) => {
+  let authToken = getAuthToken();
   if (!authToken) {
     throw new Error("Authentication required");
   }

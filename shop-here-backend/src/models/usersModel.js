@@ -12,7 +12,7 @@ const User = {
      */
     getAll: async () => {
         const query = `
-            SELECT user_id, email, contact, first_name, last_name, address, role, created_at, updated_at, is_active
+            SELECT user_id, email, contact, full_name, role, created_at, updated_at, is_active
             FROM users
         `;
         try {
@@ -32,7 +32,7 @@ const User = {
      */
     getById: async (id) => {
         const query = `
-            SELECT user_id, email, contact, first_name, last_name, address, role, created_at, updated_at, is_active
+            SELECT user_id, email, contact, full_name, role, created_at, updated_at, is_active
             FROM users
             WHERE user_id = ?
         `;
@@ -53,7 +53,7 @@ const User = {
      */
     findActiveById: async (id) => {
         const query = `
-            SELECT user_id, email, contact, first_name, last_name, address, role, created_at, updated_at, is_active
+            SELECT user_id, email, contact, full_name, role, created_at, updated_at, is_active
             FROM users
             WHERE user_id = ? AND is_active = true
         `;
@@ -75,7 +75,7 @@ const User = {
      */
     getByEmail: async (email) => {
         const query = `
-            SELECT user_id, email, contact, password, first_name, last_name, address, role, created_at, updated_at, is_active
+            SELECT user_id, email, contact, password, full_name, role, created_at, updated_at, is_active
             FROM users
             WHERE email = ?
         `;
@@ -97,7 +97,7 @@ const User = {
      */
     findActiveByEmail: async (email) => {
         const query = `
-            SELECT user_id, email, contact, password, first_name, last_name, address, role, created_at, updated_at, is_active
+            SELECT user_id, email, contact, password, full_name, role, created_at, updated_at, is_active
             FROM users
             WHERE email = ? AND is_active = true
         `;
@@ -118,7 +118,7 @@ const User = {
      */
     findByContact: async (contact) => {
         const query = `
-            SELECT user_id, email, contact, password, first_name, last_name, address, role, created_at, updated_at, is_active
+            SELECT user_id, email, contact, password, full_name, role, created_at, updated_at, is_active
             FROM users
             WHERE contact = ?
         `;
@@ -167,7 +167,7 @@ const User = {
      * Creates a new user.
      * Assumes password hashing and validation occur in the service layer.
      * Assumes created_at/updated_at are handled by DB defaults.
-     * @param {Object} userData - An object containing user data (e.g., { email, password, first_name, ... }).
+     * @param {Object} userData - An object containing user data (e.g., { email, password, full_name, ... }).
      * @returns {Promise<Object>} A promise that resolves to the result object from the database operation (contains insertId, affectedRows, etc.).
      */
     create: async (userData) => {
@@ -188,7 +188,7 @@ const User = {
      * Assumes validation occurs in the service layer.
      * Assumes updated_at is handled by DB default ON UPDATE.
      * @param {number} id - The ID of the user to update.
-     * @param {Object} userData - An object containing the fields to update (e.g., { first_name: 'New', contact: '123' }).
+     * @param {Object} userData - An object containing the fields to update (e.g., { full_name: 'New', contact: '123' }).
      * @returns {Promise<Object>} A promise that resolves to the result object from the database operation.
      */
     update: async (id, userData) => {

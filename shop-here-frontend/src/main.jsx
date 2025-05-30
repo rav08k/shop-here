@@ -12,12 +12,13 @@ import Profile from "./pages/profilePage/ProfilePage";
 import WishlistPage from "./components/profileComponents/MyWishlist";
 import SellerDashboard from "./pages/sellerDashboard/SellerDashboard";
 import Loginpage from "./pages/loginPage/LoginPage";
+import { isAuthenticated } from "./services/apiServices/userApiServices";
 
 const PrivateRoute = ({ children }) => {
-	// const { isAuthenticated } = useAuth();
-	const [isAuthenticated , setIsAuthenticated] = useState(true);
+	const isAuth  = isAuthenticated();
+console.log("render on each private route click");
 
-	return isAuthenticated ? children : <Navigate to="/login" replace />;
+	return isAuth ? children : <Navigate to="/login" replace />;
 };
 
 createRoot(document.getElementById("root")).render(
@@ -69,6 +70,12 @@ createRoot(document.getElementById("root")).render(
 							<PrivateRoute>
 								<Profile activeCompoment="manageAddresses" />
 							</PrivateRoute>
+						}
+					/>
+					<Route
+						path="/seller"
+						element={
+							<SellerDashboard />
 						}
 					/>
 					<Route path="/login" element={<Loginpage />} />

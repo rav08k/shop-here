@@ -30,7 +30,7 @@ const productController = {
         const { id } = req.params;
         const requestingUser = req.user; // Might be undefined for public requests
         try {
-            const product = await productService.getProductById(Number(id), requestingUser);
+            const product = await productService.getProductById(id, requestingUser);
             res.status(200).json(product);
         } catch (error) {
             console.error(`GetProductById controller error for ID ${id}:`, error.message);

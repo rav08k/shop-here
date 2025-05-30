@@ -26,11 +26,14 @@ const authService = {
         try {
             const user = await User.findActiveByEmail(email);
 
+            
             if (!user) {
                 throw new Error('Invalid Email');
             }
-
+            
             const isPasswordValid = await bcrypt.compare(password, user.password);
+            console.log(user);
+            
             if (!isPasswordValid) {
                 throw new Error('Invalid Password');
             }
@@ -48,7 +51,7 @@ const authService = {
                     userId: user.user_id,
                     email: user.email,
                     role: user.role,
-                    firstName: user.first_name
+                    fullName: user.full_name
                 }
             };
 
@@ -142,7 +145,7 @@ const authService = {
                     userId: user.user_id,
                     email: user.email,
                     role: user.role,
-                    firstName: user.first_name
+                    fullName: user.full_name
                 }
             };
 

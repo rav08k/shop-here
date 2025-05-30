@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./loginPage.css";
+import { register, login } from "../../services/apiServices/userApiServices"
 
 function LoginPage() {
 	const [phoneNumber, setPhoneNumber] = useState("");
@@ -13,7 +14,8 @@ function LoginPage() {
 
 	const handleContinue = () => {
 		if (showLogin && !showOtpLogin) {
-			console.log("Logging in with:", phoneNumber, password);
+			console.log("Logging in with:", email, password);
+			login({email:email,password:password})
 		} else if (showOtpLogin && !showOtpInput) {
 			// Phone number submitted, show OTP input
 			console.log("Phone number submitted for OTP:", phoneNumber);
@@ -23,6 +25,12 @@ function LoginPage() {
 			console.log("Verifying OTP:", otp, "for phone:", phoneNumber);
 		} else {
 			console.log("Registering with:", name, email, password);
+			register({
+				email:email,
+				contact: phoneNumber,
+				password:password,
+				fullName : name
+			})
 		}
 	};
 
@@ -137,11 +145,11 @@ function LoginPage() {
 			return (
 				<div className="input-container">
 					<input
-						type="text"
+						type="email"
 						className="form-input"
-						placeholder="Phone or email"
-						value={phoneNumber}
-						onChange={(e) => setPhoneNumber(e.target.value)}
+						placeholder="Email"
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
 					/>
 					<input
 						type="password"

@@ -187,17 +187,20 @@ const productService = {
 	getProductById: async (productId, requestingUser) => {
 		// (Implementation from previous step - unchanged)
 		let fetchInactive = false;
-		if (AuthHelpers._isAdmin(requestingUser)) {
+		if (requestingUser && AuthHelpers._isAdmin(requestingUser)) {
 			fetchInactive = true;
 		}
+		
 		try {
 			const product = await Product.getById(productId, fetchInactive);
+			console.log( "servises",product);
+			
 			if (!product) {
 				throw new Error("Product not found");
 			}
-			if (!product.is_active && !AuthHelpers._isAdmin(requestingUser)) {
-				throw new Error("Product not found");
-			}
+			// if (!product.is_active && !AuthHelpers._isAdmin(requestingUser)) {
+			// 	throw new Error("Product not found");
+			// }
 
 			const [colors, sizes, images, metaInfo] = await Promise.all([
 				ProductColor.getByProductId(productId),
@@ -206,7 +209,6 @@ const productService = {
                 MetaInfo.getByProductId(productId)
 			]);
 
-            product.meta_info = metaRows.length > 0 ? metaRows[0] : null;
 			return {
 				...product,
 				colors: colors || [],

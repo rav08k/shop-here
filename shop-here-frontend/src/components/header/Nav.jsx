@@ -1,15 +1,17 @@
 import "./nav.css";
 import { useState } from "react";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink , useNavigate } from "react-router";
 import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { GrCart } from "react-icons/gr";
 import { IoLocationOutline } from "react-icons/io5";
 import logo from "../../../public/assets/logo1.png";
-
+import { useUserStore } from "../../stores/userStore";
+import { logout } from "../../services/apiServices/userApiServices";
 import useDeliveryPin from "../../stores/deliveryPinStore";
 
 function Nav() {
 	const [isHovered, setIsHovered] = useState(false);
+	const {isAuthenticated , user} = useUserStore();
 	const { deliveryPin, setIsPopupOpen, deliveryAddress } = useDeliveryPin();
 	function handleClick() {
 		setIsPopupOpen(true);
@@ -47,7 +49,7 @@ function Nav() {
 					>
 						<FaRegUser size={20} />
 						<p>Profile</p>
-						{isHovered && <ProfilePopup setIsHovered={setIsHovered} />}
+						{isHovered && <ProfilePopup setIsHovered={setIsHovered} isLoggedIn={isAuthenticated} user = {user && user.fullName}/>}
 					</div>
 					<NavLink to={"/wishlist"} className="wishlist">
 						<FaRegHeart size={20} />
@@ -69,6 +71,11 @@ function ProfilePopup({
 	user = "Ravi",
 	userContact = "1234567890",
 }) {
+	const navigate = useNavigate();
+	function logoutUser() {
+		logout();
+		navigate("/")
+	};
 	return (
 		<div
 			className="login-popup"
@@ -105,11 +112,13 @@ function ProfilePopup({
 					<>
 						<hr />
 						<li><Link to={"/editprofile"}>Edit Profile</Link ></li>
-						<li>Logout</li>
+						<li onClick={logoutUser}>Logout</li>
 					</>
 				)}
 			</ul>
 		</div>
 	);
 }
+
+
 export default Nav;

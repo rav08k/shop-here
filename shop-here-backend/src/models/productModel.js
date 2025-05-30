@@ -149,31 +149,31 @@ const Product = {
      */
     getById: async (productId, fetchInactive = false) => {
         // Main product query
+        
         let query = `
             SELECT
-                p.*,
-                c.category_name,
-                sc.subcategory_name,
-                b.brand_name
+            p.*,
+            c.category_name,
+            sc.subcategory_name,
+            b.brand_name
             FROM products p
             LEFT JOIN categories c ON p.category_id = c.category_id
             LEFT JOIN subcategories sc ON p.subcategory_id = sc.subcategory_id
             LEFT JOIN brands b ON p.brand_id = b.brand_id
-            WHERE p.product_id = ?
-        `;
-    
-        if (!fetchInactive) {
-            query += ' AND p.is_active = 1';
-        }
-    
+            WHERE p.product_id = ${productId}`;
+            
+            // if (!fetchInactive) {
+                //     query += ' AND p.is_active = 1';
+                // }
+                
         try {
-            // Get the main product data
-            const [productRows] = await pool.execute(query, productId);
+            const [productRows] = await pool.execute(query);
             
             if (productRows.length === 0) {
                 return null;
             }            
-
+            // console.warn("working fine till here", productRows);
+            
             return productRows;
         } catch (error) {
             console.error(`Error fetching product with ID ${id}:`, error);
